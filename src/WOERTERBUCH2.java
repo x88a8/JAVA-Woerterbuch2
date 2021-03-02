@@ -4,4 +4,8 @@ public class WOERTERBUCH2 {
     WOERTERBUCH2() {
         baum = new BAUM();
     }
+
+    void Uebersetzen(String wort) {
+
+    }
 }
