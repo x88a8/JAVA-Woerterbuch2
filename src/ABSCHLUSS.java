@@ -3,7 +3,7 @@
  * Beschreibt das Abschlusselement des Baums.
  * 
  * @author Arbeitskreis
- * @version 1.0
+ * @version 2.0
  */
 class ABSCHLUSS extends BAUMELEMENT
 {
