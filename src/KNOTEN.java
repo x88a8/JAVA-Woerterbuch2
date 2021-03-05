@@ -33,35 +33,34 @@ public class KNOTEN extends BAUMELEMENT
      * @param wert Referenz auf ein Datenelement mit dem Vergleichswert
      * @return Referenz auf das Datenelement, wenn der Wert gefunden wurde<br>null: sonst
      */
-    public DATENELEMENT suchen(DATENELEMENT wert)
+    public DATENELEMENT suchen(DATENELEMENT wert, String type)
     {
-        if (daten.vergleichen (wert) == 0)
+        if (daten.vergleichen (wert, type) == 0)
         {
             return daten;
         }
         else
         {
-            if (daten.vergleichen(wert) > 0)
+            if (daten.vergleichen(wert, type) > 0)
             {
-                return linkerNachfolger.suchen(wert);
+                return linkerNachfolger.suchen(wert, type);
             }   
             else
                 {
-                    return rechterNachfolger.suchen(wert);
+                    return rechterNachfolger.suchen(wert, type);
                 }
         }
     }
     
     public BAUMELEMENT einfuegen(DATENELEMENT wert)
     {
-        if (daten.vergleichen (wert) == 0)
+        if (daten.vergleichen (wert, "") == 0)
         {
-            System. out. print ("Das Datenelement ist schon vorhanden: ");
             wert.ausgeben ();
         }
         else
         {
-            if (daten.vergleichen(wert) > 0)
+            if (daten.vergleichen(wert, "") > 0)
             {
                 linkerNachfolger = linkerNachfolger.einfuegen(wert);
             }

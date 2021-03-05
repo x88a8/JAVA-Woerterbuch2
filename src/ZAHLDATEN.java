@@ -18,18 +18,19 @@ public class ZAHLDATEN implements DATENELEMENT
     {
         wert = w;
     }
-    
+
+
     /**
      * Vergleicht das vorhandene Datenelement mit dem &uuml;bergebenen.
      * @param wert Referenz auf den Vergleichswert
-     * @return -1: das aktuelle Element ist kleiner als das Vergleichselement<br>
-     *          0: das aktuelle Elelemt hat den gleichen Wert wie das Vergleichselement<br>
+     * @return 1: das aktuelle Element ist kleiner als das Vergleichselement<br>
+     *      *          0: das aktuelle Elelemt hat den gleichen Wert wie das Vergleic-hselement<br>
      *          1: das aktuelle Element ist gr&ouml;&szlig;er als das Vergleichselement
      */
-    public int vergleichen(DATENELEMENT wert)
+    public int vergleichen(DATENELEMENT wert, String type)
     {
         int vergleich;
-        vergleich = ((ZAHLDATEN) wert). wert;
+        vergleich = ((ZAHLDATEN) wert).wert;
         if (this. wert == vergleich)
         {
             return 0;

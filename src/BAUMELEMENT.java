@@ -20,7 +20,7 @@ abstract class BAUMELEMENT
      * @param wert Referenz auf ein Datenelement mit dem Vergleichswert
      * @return Referenz auf das Datenelement, wenn der Wert gefunden wurde<br>null: sonst
      */
-    public abstract DATENELEMENT suchen(DATENELEMENT wert);
+    public abstract DATENELEMENT suchen(DATENELEMENT wert, String type);
     
     /**
      * F&uuml;gt ein neues Datenelement in den Baum ein.

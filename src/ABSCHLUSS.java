@@ -21,7 +21,7 @@ class ABSCHLUSS extends BAUMELEMENT
      * @param wert Referenz auf ein Datenelement mit dem Vergleichswert
      * @return Referenz auf das Datenelement, wenn der Wert gefunden wurde<br>null: sonst
      */
-    public DATENELEMENT suchen(DATENELEMENT wert)
+    public DATENELEMENT suchen(DATENELEMENT wert, String type)
     {
         return null;
     }

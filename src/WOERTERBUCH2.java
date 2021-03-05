@@ -5,9 +5,16 @@ public class WOERTERBUCH2 {
         baum = new BAUM();
     }
 
-    void Uebersetzen(String wort) {
+    void Uebersetzen(String wort, String type) {
         WORT daten;
-        daten = (WORT) baum.suchen(new WORT(wort,""));
+        if (type == "EnDe") {
+            daten = (WORT) baum.suchen(new WORT(wort,""), type);
+        } else if (type == "DeEn") {
+            daten = (WORT) baum.suchen(new WORT("",wort), type);
+        } else {
+            System.out.println("In meinem Chat wird NUR DEUTSCH gesprochen!") ;
+            daten = null;
+        }
         if (daten != null) {
             daten.ausgeben();
         } else {

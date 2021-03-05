@@ -25,9 +25,9 @@ public class BAUM
      * @param wert Referenz auf ein Datenelement mit dem Vergleichswert
      * @return Referenz auf das Datenelement, wenn der Wert gefunden wurde<br>null: sonst
      */
-    public DATENELEMENT suchen(DATENELEMENT wert)
+    public DATENELEMENT suchen(DATENELEMENT wert, String type)
     { 
-            return wurzel.suchen(wert);
+            return wurzel.suchen(wert, type);
     }
     
     public void einfuegen(DATENELEMENT wert)

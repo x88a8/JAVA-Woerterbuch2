@@ -3,13 +3,13 @@ public class TEST
 {
     // Attribute
    
-    private BAUM baum;
+    private WOERTERBUCH2 duden;
 
     //Konstruktor
 
     public TEST()
 	{
-        baum = new BAUM();
+        duden = new WOERTERBUCH2();
     }
 	public static void main(String[] args) {
     	testDurchlauf();
@@ -18,19 +18,15 @@ public class TEST
     
     public static void testDurchlauf()
 	{
-		BAUM baum = new BAUM();
-		String Deutsch[] = {"bb","abb","abab"};
-		String Englisch[] = {"bba","baa","abab"};
+		WOERTERBUCH2 duden = new WOERTERBUCH2();
 
-		baum.einfuegen(new WORT (Englisch[0],Deutsch[0]));
-		baum.einfuegen(new WORT (Englisch[1],Deutsch[1]));
-		baum.einfuegen(new WORT (Englisch[2],Deutsch[2]));
+		String English[] = {"Zero","One","Two","Three","Four", "Five","Six","Seven","Eight","Nine","Ten", "Eleven","Twelve","Thirteen","Fourteen","Fifteen", "Sixteen","Seventeen","Eighteen","Nineteen"};
+		String Deutsch[] = {"Goanix", "Oans","Zwo","Drei", "Füa", "fünf", "sexxe", "simme", "achte", "neine", "zene", "oife", "zwoife", "dreizea", "füazea", "fuchzea", "sechzea", "süpzea", "achzea", "neizea"};
 
-		baum.preOrder();
-		baum.inOrder();
-		baum.postOrder();
-		
-		baum.anzahlKnotenGeben();
+		for (int i = 0; i < English.length; i++) {
+			duden.Einfuegen(English[i], Deutsch[i]);
+		}
+		duden.Uebersetzen("Füa", "DeEn");
 	}
 }
 

@@ -7,12 +7,28 @@ public class WORT implements DATENELEMENT{
         this.english = english;
     }
 
-
-    public int vergleichen(DATENELEMENT wert) {
-        return 0;
+    public int vergleichen(DATENELEMENT wert, String type) {
+        String vergleich;
+        if (type == "EnDe") {
+            vergleich = ( (WORT) wert).english;
+            if (this.english == vergleich) {
+                return 0;
+            } else {
+                return 1;
+            }
+        } else if (type == "DeEn") {
+            vergleich = ( (WORT) wert).deutsch;
+            if (this.deutsch == vergleich) {
+                return 0;
+            } else {
+                return 1;
+            }
+        } else {
+            return 1;
+        }
     }
 
     public void ausgeben() {
-        System.out.println("Deutsch: " + deutsch + " Englisch :" + english);
+        System.out.println("Deutsch: " + deutsch + " ---- Englisch: " + english);
     }
 }
