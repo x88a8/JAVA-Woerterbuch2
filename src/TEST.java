@@ -26,7 +26,15 @@ public class TEST
 		for (int i = 0; i < English.length; i++) {
 			duden.Einfuegen(English[i], Deutsch[i]);
 		}
-		duden.Uebersetzen("Füa", "DeEn");
+
+
+		for (int i = 0; i < (8 + 1); i++) {
+			duden.Uebersetzen(English[i], "EnDe");
+		}
+		for (int i = 9; i < (13 + 1); i++) {
+			duden.Uebersetzen(Deutsch[i], "DeEn");
+		}
+
 	}
 }
 

@@ -56,7 +56,7 @@ public class KNOTEN extends BAUMELEMENT
     {
         if (daten.vergleichen (wert, "") == 0)
         {
-            wert.ausgeben ();
+            wert.ausgeben ("");
         }
         else
         {
@@ -80,7 +80,7 @@ public class KNOTEN extends BAUMELEMENT
      */
     public void preOrder()
     {
-        daten.ausgeben();
+        daten.ausgeben("");
         linkerNachfolger.preOrder();
         rechterNachfolger.preOrder();
     }
@@ -91,7 +91,7 @@ public class KNOTEN extends BAUMELEMENT
     public void inOrder()
     {
         linkerNachfolger.inOrder();
-        daten.ausgeben();
+        daten.ausgeben("");
         rechterNachfolger.inOrder();
     }
     
@@ -102,7 +102,7 @@ public class KNOTEN extends BAUMELEMENT
     {
         linkerNachfolger.postOrder();
         rechterNachfolger.postOrder();
-        daten.ausgeben();
+        daten.ausgeben("");
     }
     
     public int anzahlKnotenGeben()

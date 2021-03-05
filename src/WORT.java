@@ -28,7 +28,7 @@ public class WORT implements DATENELEMENT{
         }
     }
 
-    public void ausgeben() {
-        System.out.println("Deutsch: " + deutsch + " ---- Englisch: " + english);
+    public void ausgeben(String type) {
+        if (type == "de") { System.out.println("Deutsch: " + deutsch); } else {System.out.println("Englisch: " + english); };
     }
 }

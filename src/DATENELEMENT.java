@@ -20,5 +20,5 @@ interface DATENELEMENT
     /**
      * Gibt die relevante Information des Datenelements auf die Konsole aus.
      */
-    public void ausgeben ();
+    public void ausgeben (String type);
 }
