@@ -8,31 +8,24 @@ public class TEST
     //Konstruktor
 
     public TEST()
-    {
-        
+	{
         baum = new BAUM();
     }
-
+	public static void main(String[] args) {
+    	testDurchlauf();
+	}
     //Methoden
     
-    public void testDurchlauf()
+    public static void testDurchlauf()
 	{
 		BAUM baum = new BAUM();
-		baum.einfuegen(new ZAHLDATEN (18));
-		baum.einfuegen(new ZAHLDATEN (7));
-		baum.einfuegen(new ZAHLDATEN (28));
-		baum.einfuegen(new ZAHLDATEN (4));
-		baum.einfuegen(new ZAHLDATEN (12));
-		baum.einfuegen(new ZAHLDATEN (23));
-		baum.einfuegen(new ZAHLDATEN (33));
-		baum.einfuegen(new ZAHLDATEN (1));
-		baum.einfuegen(new ZAHLDATEN (5));
-		baum.einfuegen(new ZAHLDATEN (10));
-		baum.einfuegen(new ZAHLDATEN (16));
-		baum.einfuegen(new ZAHLDATEN (21));
-		baum.einfuegen(new ZAHLDATEN (24));
-		baum.einfuegen(new ZAHLDATEN (31));
-		baum.einfuegen(new ZAHLDATEN (36));
+		String Deutsch[] = {"bb","abb","abab"};
+		String Englisch[] = {"bba","baa","abab"};
+
+		baum.einfuegen(new WORT (Englisch[0],Deutsch[0]));
+		baum.einfuegen(new WORT (Englisch[1],Deutsch[1]));
+		baum.einfuegen(new WORT (Englisch[2],Deutsch[2]));
+
 		baum.preOrder();
 		baum.inOrder();
 		baum.postOrder();
