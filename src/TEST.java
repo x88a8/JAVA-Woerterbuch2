@@ -4,7 +4,7 @@ public class TEST
     // Attribute
    
     private WOERTERBUCH2 duden;
-
+	public Dictionary gui;
     //Konstruktor
 
     public TEST()
@@ -12,7 +12,6 @@ public class TEST
         duden = new WOERTERBUCH2();
     }
 	public static void main(String[] args) {
-    	testDurchlauf();
 	}
     //Methoden
     
@@ -21,7 +20,7 @@ public class TEST
 		WOERTERBUCH2 duden = new WOERTERBUCH2();
 
 		String English[] = {"Zero","One","Two","Three","Four", "Five","Six","Seven","Eight","Nine","Ten", "Eleven","Twelve","Thirteen","Fourteen","Fifteen", "Sixteen","Seventeen","Eighteen","Nineteen"};
-		String Deutsch[] = {"Goanix", "Oans","Zwo","Drei", "Füa", "fünf", "sexxe", "simme", "achte", "neine", "zene", "oife", "zwoife", "dreizea", "füazea", "fuchzea", "sechzea", "süpzea", "achzea", "neizea"};
+		String Deutsch[] = {"Null", "Eins","Zwei","Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn", "Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sehchzehn", "Siebzehn", "Achtzehn", "Neunzehn"};
 
 		for (int i = 0; i < English.length; i++) {
 			duden.Einfuegen(English[i], Deutsch[i]);
@@ -36,6 +35,7 @@ public class TEST
 		}
 
 	}
+
 }
 
 

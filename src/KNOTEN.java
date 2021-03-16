@@ -49,6 +49,7 @@ public class KNOTEN extends BAUMELEMENT
                 {
                     return rechterNachfolger.suchen(wert, type);
                 }
+
         }
     }
     

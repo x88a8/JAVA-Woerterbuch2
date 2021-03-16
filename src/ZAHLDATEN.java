@@ -48,8 +48,10 @@ public class ZAHLDATEN implements DATENELEMENT
     /**
      * Gibt die relevante Information des Datenelements auf die Konsole aus.
      */
-    public void ausgeben (String type)
+    public String ausgeben (String type)
     {
         System. out. println ("Das Datenelement hat den Wert: " + wert);
+        return "";
+
     }
 }
