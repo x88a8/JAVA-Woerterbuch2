@@ -11,14 +11,14 @@ public class WORT implements DATENELEMENT{
         String vergleich;
         if (type == "EnDe") {
             vergleich = ( (WORT) wert).english;
-            if (this.english == vergleich) {
+            if (this.english.equals(vergleich)) {
                 return 0;
             } else {
                 return 1;
             }
         } else if (type == "DeEn") {
             vergleich = ( (WORT) wert).deutsch;
-            if (this.deutsch == vergleich) {
+            if (this.deutsch.equals(vergleich)) {
                 return 0;
             } else {
                 return 1;

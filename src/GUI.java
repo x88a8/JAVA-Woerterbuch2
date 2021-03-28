@@ -54,8 +54,8 @@ public class GUI extends JFrame {
 
     private void initComponents() {
         labelUeberschrift = new JLabel("                    Uebersetzer                             ");
-        labelEnglish = new JLabel("Englisch                     ");
-        labelDeutsch = new JLabel("Deutsch");
+        labelEnglish = new JLabel("Englisch              Deutsch       ");
+        labelDeutsch = new JLabel("                      ");
 
         buttonUebersetzen = new JButton("Uebersetzen");
         buttonUebersetzen.addActionListener(new ActionListener() {

@@ -12,10 +12,11 @@ public class TEST
         duden = new WOERTERBUCH2();
     }
 	public static void main(String[] args) {
+		testDurchlf();
 	}
     //Methoden
     
-    public static void testDurchlauf()
+    public static void testDurchlf()
 	{
 		WOERTERBUCH2 duden = new WOERTERBUCH2();
 
